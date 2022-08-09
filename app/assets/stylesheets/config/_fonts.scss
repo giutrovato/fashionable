@@ -1,16 +1,19 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
+
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
+@font-face {
+font-family: 'Black Ops One', cursive;
+  src: font-url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 //   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
 //        font-url('FontFile.woff') format('woff'),
 //        font-url('FontFile.ttf') format('truetype')
-// }
+}
 // $my-font: "Font Name";
