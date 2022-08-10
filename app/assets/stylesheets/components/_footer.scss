@@ -1,3 +1,9 @@
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  }
+
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
@@ -87,9 +93,3 @@
   font-size:13px;
   margin-bottom:0;
 }
-
-.page-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  }
