@@ -1,0 +1,24 @@
+<h1 class="text-center">Buy me!</h1>
+    <div class="album py-2 bg-light">
+      <div class="container">
+        <div class="row product-index">
+        <% @products.each do |product| %>
+          <div class="col-3">
+            <div class="card-product text-center">
+              <% if product.photo.attached? %>
+                <%= cl_image_tag product.photo.key, height: 120, class:"index-pictures" %>
+                <% else %>
+                <%= image_tag "#", height: 120, class:"index-pictures"%>
+              <%end %>
+              <div class="card-body">
+                <h4 class="card-title"><%= product.category %></h4>
+                <h6 class="card-title"><%= product.gender %></h6>
+
+                <p class="card-text"><%= product.price.to_i %>€</p>
+                <a href="<%=product_path(product)%>" class="btn btn-primary">Buy it!</a>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    </div>

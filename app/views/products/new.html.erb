@@ -1,0 +1,23 @@
+<div class="expand-lg">
+  <div class="text-center">
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h3 class="maintext">Sell your X-Crew Product🏋️</h3>
+          <%= simple_form_for @product do |f| %>
+            <%= f.input :gender %>
+            <select class="form-select" aria-label="Default select example">
+  <option selected>Choice of Your Item Type</option>
+  <option value="1">Men</option>
+  <option value="2">Women</option>
+  <option value="3">Accessories</option>
+</select>
+            <%= f.input :describtion %>
+            <%= f.input :price %>
+            <%= f.input :category %>
+            <%= f.input :photo, as: :file%>
+            <%= f.submit class: 'btn btn-outline-dark' %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
